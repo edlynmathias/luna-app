@@ -1,0 +1,976 @@
+{
+ "symptoms": [
+  {
+   "id": "heavy_bleeding",
+   "label": "Heavy periods",
+   "question": "Are your periods heavy - for example soaking through a pad or tampon every 1-2 hours, or needing to double up?",
+   "kind": "symptom",
+   "synonyms": [
+    "heavy (period|bleed|flow)",
+    "\\bheavy\\b",
+    "soak(ing|ed)? (through|a pad|pads)",
+    "flooding",
+    "menorrhagia",
+    "double up",
+    "change (my )?pads? every (hour|1|2)"
+   ]
+  },
+  {
+   "id": "large_clots",
+   "label": "Large blood clots",
+   "question": "Do you pass blood clots bigger than about 2.5 cm (a large coin)?",
+   "kind": "symptom",
+   "synonyms": [
+    "\\bclots?\\b",
+    "clotting"
+   ]
+  },
+  {
+   "id": "long_periods",
+   "label": "Periods lasting more than 7 days",
+   "question": "Do your periods usually last longer than 7 days?",
+   "kind": "symptom",
+   "synonyms": [
+    "(last|lasting|lasts|goes on) (more than|longer than|over) (7|seven|a week)",
+    "(8|9|10|eight|nine|ten) days? (long|of bleeding)",
+    "bleed(ing)? for (more than|over) a week",
+    "long periods?"
+   ]
+  },
+  {
+   "id": "irregular_cycles",
+   "label": "Irregular cycles",
+   "question": "Is the time between your periods unpredictable - varying a lot from month to month?",
+   "kind": "symptom",
+   "synonyms": [
+    "irregular",
+    "unpredictable",
+    "(period|cycle)s? (are|is) random",
+    "never know when"
+   ]
+  },
+  {
+   "id": "infrequent_or_missed",
+   "label": "Missed or infrequent periods",
+   "question": "Have your periods stopped, or do you often go more than 35 days between them?",
+   "kind": "symptom",
+   "synonyms": [
+    "miss(ed|ing)? (a |my )?periods?",
+    "no periods?",
+    "periods? (have |has )?stopped",
+    "(late|delayed) periods?",
+    "periods? (is |are )?late",
+    "amenorrh",
+    "haven'?t had (a|my) period",
+    "(only|just) (get|have) (a )?periods? (a few|every few|twice|3|4)"
+   ]
+  },
+  {
+   "id": "bleeding_between",
+   "label": "Bleeding between periods",
+   "question": "Do you get bleeding or spotting between your periods?",
+   "kind": "symptom",
+   "synonyms": [
+    "between periods",
+    "spotting",
+    "intermenstrual",
+    "bleed(ing)? mid[- ]?cycle"
+   ]
+  },
+  {
+   "id": "bleeding_after_sex",
+   "label": "Bleeding after sex",
+   "question": "Do you ever bleed after sex?",
+   "kind": "symptom",
+   "synonyms": [
+    "bleed(ing)? after (sex|intercourse)",
+    "post[- ]?coital"
+   ]
+  },
+  {
+   "id": "painful_periods",
+   "label": "Period pain or cramps",
+   "question": "Do you get cramps or pain during your period?",
+   "kind": "symptom",
+   "synonyms": [
+    "cramp",
+    "period pain",
+    "painful periods?",
+    "dysmenorr",
+    "pain (during|with|on) (my )?period"
+   ]
+  },
+  {
+   "id": "severe_pain",
+   "label": "Severe period pain",
+   "question": "Is the pain bad enough to stop you doing normal things like school or work, or does it carry on even with painkillers?",
+   "kind": "symptom",
+   "synonyms": [
+    "severe (pain|cramp)",
+    "(unbearable|excruciating|debilitating|crippling) (pain|cramp)",
+    "(miss|missing|skip) (school|work|class|college)",
+    "painkillers? (don'?t|do not|doesn'?t) (help|work)",
+    "can'?t (get out of bed|move|stand)"
+   ]
+  },
+  {
+   "id": "pain_outside_period",
+   "label": "Pelvic pain outside periods",
+   "question": "Do you have pain in your lower tummy or pelvis at times when you're not on your period?",
+   "kind": "symptom",
+   "synonyms": [
+    "pelvic pain",
+    "pain (in|at) (my )?(lower )?(tummy|abdomen|pelvis)",
+    "(lower )?(tummy|abdominal|stomach) pain",
+    "pain (between|outside( of)?) (my )?periods?",
+    "pain all month"
+   ]
+  },
+  {
+   "id": "pain_during_sex",
+   "label": "Pain during or after sex",
+   "question": "Do you get pain during or after sex?",
+   "kind": "symptom",
+   "synonyms": [
+    "pain(ful)? (during|with|after) (sex|intercourse)",
+    "dyspareunia",
+    "sex (is|was) painful",
+    "hurts? (during|when having|after) sex",
+    "(hurts?|painful|sore) (during|after|with) sex"
+   ]
+  },
+  {
+   "id": "painful_bowel_or_urination",
+   "label": "Pain when pooing or peeing",
+   "question": "Do you get pain when you poo or pee, especially around your period?",
+   "kind": "symptom",
+   "synonyms": [
+    "pain(ful)? (when|while) (i )?(poo|pee|urinat|go to the toilet|bowel)",
+    "(hurts|burns|stings) (when|to) (i )?(pee|poo|urinate)",
+    "painful (bowel|urination|peeing|pooping)",
+    "(hurts?|pain|painful|sore) (when|while|to) (i )?(poo|pee|urinat|wee)"
+   ]
+  },
+  {
+   "id": "lower_back_or_leg_pain",
+   "label": "Lower back or leg pain",
+   "question": "Do you get lower back pain, or pain that spreads down your legs?",
+   "kind": "symptom",
+   "synonyms": [
+    "(lower )?back pain",
+    "back (aches|hurts)",
+    "pain (in|down) (my )?legs?",
+    "thigh pain"
+   ]
+  },
+  {
+   "id": "sudden_severe_pain",
+   "label": "Sudden, severe pelvic pain",
+   "question": "Have you had sudden, sharp, severe pain in your pelvis or tummy?",
+   "kind": "symptom",
+   "synonyms": [
+    "sudden (severe |sharp )?(pain|stabbing)",
+    "sharp stabbing pain",
+    "worst pain"
+   ]
+  },
+  {
+   "id": "bloating_or_pelvic_pressure",
+   "label": "Bloating or pelvic fullness",
+   "question": "Do you feel bloated, or a heaviness or fullness in your lower tummy?",
+   "kind": "symptom",
+   "synonyms": [
+    "bloat",
+    "swollen (tummy|belly|stomach)",
+    "(heaviness|fullness|pressure) in (my )?(tummy|pelvis|abdomen|lower)"
+   ]
+  },
+  {
+   "id": "frequent_urination",
+   "label": "Peeing more often",
+   "question": "Do you need to pee more often or more urgently than usual?",
+   "kind": "symptom",
+   "synonyms": [
+    "pee(ing)? (a lot|more|often|frequently)",
+    "frequent urination",
+    "urinat(e|ing) (a lot|often|more)",
+    "need to pee"
+   ]
+  },
+  {
+   "id": "constipation",
+   "label": "Constipation or trouble pooing",
+   "question": "Do you have trouble emptying your bowels, or constipation?",
+   "kind": "symptom",
+   "synonyms": [
+    "constipat",
+    "can'?t poo",
+    "trouble (pooing|emptying)"
+   ]
+  },
+  {
+   "id": "excess_hair",
+   "label": "Extra hair on face or body",
+   "question": "Have you noticed extra hair growth on your face, chest, back or tummy?",
+   "kind": "symptom",
+   "synonyms": [
+    "facial hair",
+    "hair (on|growth on) (my )?(face|chin|chest|back|tummy|upper lip)",
+    "hirsut",
+    "excess(ive)? hair",
+    "unwanted hair"
+   ]
+  },
+  {
+   "id": "acne_oily_skin",
+   "label": "Acne or oily skin",
+   "question": "Do you have acne or oily skin that's hard to manage?",
+   "kind": "symptom",
+   "synonyms": [
+    "\\bacne\\b",
+    "pimples",
+    "oily skin",
+    "breakouts?",
+    "spotty skin",
+    "\\bspots\\b"
+   ]
+  },
+  {
+   "id": "hair_thinning",
+   "label": "Thinning hair on the head",
+   "question": "Is the hair on your head thinning or falling out?",
+   "kind": "symptom",
+   "synonyms": [
+    "hair (loss|thinning|fall)",
+    "thinning hair",
+    "losing (my )?hair",
+    "bald"
+   ]
+  },
+  {
+   "id": "weight_gain",
+   "label": "Weight gain or trouble losing weight",
+   "question": "Have you gained weight, or found it unusually hard to lose weight?",
+   "kind": "symptom",
+   "synonyms": [
+    "(gain(ed|ing)?|put on) weight",
+    "weight gain",
+    "(hard|difficult|can'?t) (to )?lose weight"
+   ]
+  },
+  {
+   "id": "difficulty_conceiving",
+   "label": "Difficulty getting pregnant",
+   "question": "Have you been trying to get pregnant without success?",
+   "kind": "symptom",
+   "synonyms": [
+    "(can'?t|trouble|difficulty|struggling to|trying to) (get|getting) pregnant",
+    "infertil",
+    "conceiv"
+   ]
+  },
+  {
+   "id": "mood_changes_before_period",
+   "label": "Mood changes before periods",
+   "question": "In the week or two before your period, do you feel more irritable, anxious, low or emotional?",
+   "kind": "symptom",
+   "synonyms": [
+    "mood swings?",
+    "irritab",
+    "moody",
+    "(anxious|low|sad|emotional|depressed|teary) (before|ahead of|the week before)",
+    "\\bpms\\b",
+    "premenstrual"
+   ]
+  },
+  {
+   "id": "severe_mood_symptoms",
+   "label": "Severe mood symptoms",
+   "question": "Are those mood changes severe - affecting your relationships, work, or making you feel hopeless?",
+   "kind": "symptom",
+   "synonyms": [
+    "\\bpmdd\\b",
+    "hopeless",
+    "(ruin|ruining|affect(s|ing)?) (my )?(relationships?|work|life)",
+    "(severe|extreme|intense) (mood|anxiety|depression|rage)",
+    "rage"
+   ]
+  },
+  {
+   "id": "breast_tenderness",
+   "label": "Breast tenderness",
+   "question": "Do your breasts feel sore or tender?",
+   "kind": "symptom",
+   "synonyms": [
+    "(sore|tender|painful|swollen) (breasts?|boobs?|chest)",
+    "breast (pain|tenderness|soreness)"
+   ]
+  },
+  {
+   "id": "symptoms_ease_when_period_starts",
+   "label": "Symptoms ease once the period starts",
+   "question": "Do those symptoms ease within a few days of your period starting?",
+   "kind": "symptom",
+   "synonyms": [
+    "(go away|goes away|ease|stop|better) (when|once|after) (my )?period (starts|begins|comes)"
+   ]
+  },
+  {
+   "id": "headaches",
+   "label": "Headaches",
+   "question": "Do you get headaches or migraines around your period?",
+   "kind": "symptom",
+   "synonyms": [
+    "headaches?",
+    "migraines?"
+   ]
+  },
+  {
+   "id": "tiredness",
+   "label": "Tiredness or low energy",
+   "question": "Do you feel tired or low on energy much of the time?",
+   "kind": "symptom",
+   "synonyms": [
+    "tired",
+    "fatigue",
+    "exhaust",
+    "no energy",
+    "low energy",
+    "drained"
+   ]
+  },
+  {
+   "id": "shortness_breath_palpitations",
+   "label": "Breathlessness or heart palpitations",
+   "question": "Do you get short of breath easily, or notice a pounding or fluttering heartbeat?",
+   "kind": "symptom",
+   "synonyms": [
+    "short(ness)? of breath",
+    "breathless",
+    "palpitat",
+    "heart (racing|pounding|fluttering)"
+   ]
+  },
+  {
+   "id": "pale_skin",
+   "label": "Pale skin",
+   "question": "Has anyone said you look paler than usual?",
+   "kind": "symptom",
+   "synonyms": [
+    "\\bpale\\b",
+    "pallor"
+   ]
+  },
+  {
+   "id": "fainting",
+   "label": "Fainting or feeling faint",
+   "question": "Have you fainted, or felt like you might faint?",
+   "kind": "symptom",
+   "synonyms": [
+    "faint",
+    "passed out",
+    "black(ed)? out",
+    "dizzy",
+    "light[- ]?headed"
+   ]
+  },
+  {
+   "id": "fever",
+   "label": "Fever or high temperature",
+   "question": "Have you had a fever or felt hot, cold or shivery?",
+   "kind": "symptom",
+   "synonyms": [
+    "fever",
+    "high temperature",
+    "shiver",
+    "chills"
+   ]
+  },
+  {
+   "id": "unusual_discharge",
+   "label": "Unusual vaginal discharge",
+   "question": "Has your vaginal discharge changed in colour, smell or texture?",
+   "kind": "symptom",
+   "synonyms": [
+    "discharge"
+   ]
+  },
+  {
+   "id": "fishy_smell",
+   "label": "Fishy-smelling discharge",
+   "question": "Does the discharge have a strong fishy smell, especially after sex?",
+   "kind": "symptom",
+   "synonyms": [
+    "fishy",
+    "(bad|strong|unpleasant) smell",
+    "odou?r"
+   ]
+  },
+  {
+   "id": "itching_soreness",
+   "label": "Vaginal itching or soreness",
+   "question": "Do you have itching, soreness or irritation around the vagina?",
+   "kind": "symptom",
+   "synonyms": [
+    "itch",
+    "(vaginal )?soreness",
+    "irritat(ed|ion) (down there|vagin)",
+    "burning (down there|vagin)"
+   ]
+  },
+  {
+   "id": "thick_white_discharge",
+   "label": "Thick white discharge",
+   "question": "Is the discharge thick and white, a bit like cottage cheese?",
+   "kind": "symptom",
+   "synonyms": [
+    "cottage cheese",
+    "thick (and )?white"
+   ]
+  },
+  {
+   "id": "hot_flushes",
+   "label": "Hot flushes or night sweats",
+   "question": "Do you get hot flushes or night sweats?",
+   "kind": "symptom",
+   "synonyms": [
+    "hot fl(u|a)sh",
+    "night sweats?",
+    "sweating at night"
+   ]
+  },
+  {
+   "id": "vaginal_dryness",
+   "label": "Vaginal dryness",
+   "question": "Do you have vaginal dryness?",
+   "kind": "symptom",
+   "synonyms": [
+    "vaginal dryness",
+    "dry(ness)? (down there|vagina)"
+   ]
+  },
+  {
+   "id": "rash_sunburn",
+   "label": "Sunburn-like rash",
+   "question": "Do you have a widespread rash that looks like sunburn or feels like sandpaper?",
+   "kind": "symptom",
+   "synonyms": [
+    "rash",
+    "sunburn"
+   ]
+  },
+  {
+   "id": "vomiting_diarrhoea",
+   "label": "Vomiting or diarrhoea",
+   "question": "Have you been vomiting or had diarrhoea?",
+   "kind": "symptom",
+   "synonyms": [
+    "vomit",
+    "throw(ing)? up",
+    "diarrh"
+   ]
+  },
+  {
+   "id": "nausea",
+   "label": "Nausea",
+   "question": "Do you feel sick (nauseous)?",
+   "kind": "symptom",
+   "synonyms": [
+    "nause",
+    "feel(ing)? sick",
+    "queasy"
+   ]
+  },
+  {
+   "id": "tampon_or_cup_use",
+   "label": "Currently using a tampon or cup",
+   "question": "Are you using a tampon or menstrual cup at the moment?",
+   "kind": "context",
+   "synonyms": [
+    "tampon",
+    "menstrual cup",
+    "\\bcup\\b"
+   ]
+  },
+  {
+   "id": "recent_weight_loss_or_stress",
+   "label": "Recent weight loss, intense exercise or stress",
+   "question": "Have you recently lost a lot of weight, been exercising very intensely, or been under a lot of stress?",
+   "kind": "context",
+   "synonyms": [
+    "(lost|losing) (a lot of )?weight",
+    "weight loss",
+    "(stress|stressed|stressful)",
+    "(exercis|train)(e|ing) (a lot|heavily|intensely|every day)",
+    "athlete",
+    "marathon"
+   ]
+  },
+  {
+   "id": "possible_pregnancy",
+   "label": "Could be pregnant",
+   "question": "Have you had sex since your last period without reliable contraception?",
+   "kind": "context",
+   "synonyms": [
+    "(could|might|may) be pregnant",
+    "unprotected sex",
+    "pregnan"
+   ]
+  },
+  {
+   "id": "age_45_plus",
+   "label": "Aged 45 or over",
+   "question": "Are you 45 or older?",
+   "kind": "context",
+   "synonyms": [
+    "\\b(4[5-9]|5[0-9])\\s*(years? old|yo|y/o)\\b",
+    "i'?m (4[5-9]|5[0-9])\\b",
+    "in my (late )?(forties|fifties|40s|50s)"
+   ]
+  }
+ ],
+ "conditions": [
+  {
+   "id": "pcos",
+   "name": "Polycystic ovary syndrome (PCOS)",
+   "summary": "A common hormonal condition that affects how the ovaries work, often causing irregular periods and higher androgen levels.",
+   "profile": {
+    "irregular_cycles": 3,
+    "infrequent_or_missed": 3,
+    "excess_hair": 3,
+    "acne_oily_skin": 2,
+    "hair_thinning": 2,
+    "weight_gain": 2,
+    "difficulty_conceiving": 2
+   },
+   "key": [
+    "irregular_cycles",
+    "infrequent_or_missed",
+    "excess_hair"
+   ],
+   "against": {
+    "possible_pregnancy": 1
+   },
+   "sources": [
+    "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/",
+    "https://medlineplus.gov/polycysticovarysyndrome.html"
+   ]
+  },
+  {
+   "id": "endometriosis",
+   "name": "Endometriosis",
+   "summary": "Tissue similar to the womb lining grows elsewhere, such as the ovaries and fallopian tubes, causing pain that is often severe.",
+   "profile": {
+    "painful_periods": 2,
+    "severe_pain": 3,
+    "pain_outside_period": 2,
+    "pain_during_sex": 3,
+    "painful_bowel_or_urination": 3,
+    "difficulty_conceiving": 2,
+    "heavy_bleeding": 1,
+    "tiredness": 1,
+    "nausea": 1,
+    "constipation": 1
+   },
+   "key": [
+    "severe_pain",
+    "pain_during_sex",
+    "painful_bowel_or_urination",
+    "pain_outside_period"
+   ],
+   "against": {},
+   "sources": [
+    "https://www.nhs.uk/conditions/endometriosis/",
+    "https://medlineplus.gov/endometriosis.html",
+    "https://www.womenshealth.gov/a-z-topics/endometriosis"
+   ]
+  },
+  {
+   "id": "adenomyosis",
+   "name": "Adenomyosis",
+   "summary": "The womb lining grows into the muscle wall of the womb; it mostly affects people over 35.",
+   "profile": {
+    "heavy_bleeding": 3,
+    "painful_periods": 3,
+    "severe_pain": 2,
+    "pain_outside_period": 2,
+    "bloating_or_pelvic_pressure": 2,
+    "pain_during_sex": 2,
+    "difficulty_conceiving": 1,
+    "age_45_plus": 1
+   },
+   "key": [
+    "heavy_bleeding",
+    "painful_periods"
+   ],
+   "against": {},
+   "sources": [
+    "https://www.nhs.uk/conditions/adenomyosis/"
+   ]
+  },
+  {
+   "id": "fibroids",
+   "name": "Uterine fibroids",
+   "summary": "Non-cancerous growths in or around the womb; many cause no symptoms, others cause heavy bleeding and pressure.",
+   "profile": {
+    "heavy_bleeding": 3,
+    "long_periods": 2,
+    "large_clots": 2,
+    "bloating_or_pelvic_pressure": 2,
+    "frequent_urination": 2,
+    "constipation": 2,
+    "lower_back_or_leg_pain": 1,
+    "pain_during_sex": 1,
+    "painful_periods": 1,
+    "difficulty_conceiving": 1
+   },
+   "key": [
+    "heavy_bleeding",
+    "bloating_or_pelvic_pressure",
+    "frequent_urination"
+   ],
+   "against": {},
+   "sources": [
+    "https://www.nhs.uk/conditions/fibroids/",
+    "https://medlineplus.gov/uterinefibroids.html",
+    "https://www.womenshealth.gov/a-z-topics/uterine-fibroids"
+   ]
+  },
+  {
+   "id": "heavy_menstrual_bleeding",
+   "name": "Heavy menstrual bleeding",
+   "summary": "Periods heavy enough to affect daily life; it has many possible causes and is worth checking with a doctor.",
+   "profile": {
+    "heavy_bleeding": 3,
+    "large_clots": 2,
+    "long_periods": 2,
+    "tiredness": 1
+   },
+   "key": [
+    "heavy_bleeding"
+   ],
+   "against": {},
+   "sources": [
+    "https://www.nhs.uk/conditions/heavy-periods/",
+    "https://www.acog.org/womens-health/faqs/heavy-menstrual-bleeding"
+   ]
+  },
+  {
+   "id": "iron_deficiency_anaemia",
+   "name": "Iron deficiency anaemia",
+   "summary": "Low iron, often from heavy periods, leading to tiredness, breathlessness and pale skin.",
+   "profile": {
+    "tiredness": 3,
+    "shortness_breath_palpitations": 3,
+    "pale_skin": 2,
+    "headaches": 1,
+    "heavy_bleeding": 2
+   },
+   "key": [
+    "tiredness",
+    "shortness_breath_palpitations"
+   ],
+   "against": {},
+   "sources": [
+    "https://www.nhs.uk/conditions/iron-deficiency-anaemia/"
+   ]
+  },
+  {
+   "id": "primary_dysmenorrhoea",
+   "name": "Common period pain (primary dysmenorrhoea)",
+   "summary": "Cramping pain during periods without an underlying condition; it usually eases with painkillers and heat.",
+   "profile": {
+    "painful_periods": 3,
+    "lower_back_or_leg_pain": 1,
+    "nausea": 1,
+    "headaches": 1
+   },
+   "key": [
+    "painful_periods"
+   ],
+   "against": {
+    "pain_outside_period": 1,
+    "pain_during_sex": 1,
+    "severe_pain": 1,
+    "painful_bowel_or_urination": 1
+   },
+   "sources": [
+    "https://www.nhs.uk/conditions/period-pain/",
+    "https://www.acog.org/womens-health/faqs/dysmenorrhea-painful-periods",
+    "https://medlineplus.gov/periodpain.html"
+   ]
+  },
+  {
+   "id": "pms",
+   "name": "Premenstrual syndrome (PMS)",
+   "summary": "Physical and emotional symptoms in the days or weeks before a period that ease once it starts.",
+   "profile": {
+    "mood_changes_before_period": 3,
+    "symptoms_ease_when_period_starts": 3,
+    "breast_tenderness": 2,
+    "bloating_or_pelvic_pressure": 1,
+    "headaches": 1,
+    "tiredness": 1,
+    "acne_oily_skin": 1
+   },
+   "key": [
+    "mood_changes_before_period",
+    "symptoms_ease_when_period_starts"
+   ],
+   "against": {
+    "severe_mood_symptoms": 1
+   },
+   "sources": [
+    "https://www.nhs.uk/conditions/pre-menstrual-syndrome/",
+    "https://medlineplus.gov/premenstrualsyndrome.html"
+   ]
+  },
+  {
+   "id": "pmdd",
+   "name": "Premenstrual dysphoric disorder (PMDD)",
+   "summary": "A severe form of PMS where mood symptoms seriously affect daily life in the time before a period.",
+   "profile": {
+    "severe_mood_symptoms": 3,
+    "mood_changes_before_period": 2,
+    "symptoms_ease_when_period_starts": 3,
+    "tiredness": 1,
+    "breast_tenderness": 1
+   },
+   "key": [
+    "severe_mood_symptoms"
+   ],
+   "against": {},
+   "sources": [
+    "https://www.nhs.uk/conditions/pre-menstrual-syndrome/"
+   ]
+  },
+  {
+   "id": "lifestyle_missed_periods",
+   "name": "Missed periods linked to stress, weight change or exercise",
+   "summary": "Periods can stop or become irregular after big weight loss, intense exercise or a lot of stress.",
+   "profile": {
+    "infrequent_or_missed": 3,
+    "recent_weight_loss_or_stress": 3,
+    "irregular_cycles": 1
+   },
+   "key": [
+    "recent_weight_loss_or_stress"
+   ],
+   "against": {
+    "excess_hair": 1,
+    "possible_pregnancy": 1
+   },
+   "sources": [
+    "https://www.nhs.uk/conditions/stopped-or-missed-periods/",
+    "https://www.nhs.uk/conditions/irregular-periods/"
+   ]
+  },
+  {
+   "id": "possible_pregnancy",
+   "name": "Possible pregnancy",
+   "summary": "Pregnancy is the most common reason for a missed period; a pregnancy test can check.",
+   "profile": {
+    "infrequent_or_missed": 2,
+    "possible_pregnancy": 3,
+    "nausea": 2,
+    "breast_tenderness": 1,
+    "tiredness": 1
+   },
+   "key": [
+    "possible_pregnancy"
+   ],
+   "against": {},
+   "sources": [
+    "https://www.nhs.uk/conditions/stopped-or-missed-periods/"
+   ]
+  },
+  {
+   "id": "perimenopause",
+   "name": "Perimenopause or menopause",
+   "summary": "Hormone changes as periods come to an end, usually between ages 45 and 55.",
+   "profile": {
+    "hot_flushes": 3,
+    "age_45_plus": 3,
+    "irregular_cycles": 2,
+    "vaginal_dryness": 2,
+    "infrequent_or_missed": 1,
+    "mood_changes_before_period": 1
+   },
+   "key": [
+    "hot_flushes",
+    "age_45_plus"
+   ],
+   "against": {},
+   "sources": [
+    "https://www.nhs.uk/conditions/menopause/",
+    "https://medlineplus.gov/menopause.html"
+   ]
+  },
+  {
+   "id": "early_menopause",
+   "name": "Early or premature menopause",
+   "summary": "Periods becoming irregular or stopping before the age of 45, with menopause symptoms.",
+   "profile": {
+    "hot_flushes": 3,
+    "infrequent_or_missed": 3,
+    "vaginal_dryness": 2,
+    "irregular_cycles": 1
+   },
+   "key": [
+    "hot_flushes",
+    "infrequent_or_missed"
+   ],
+   "against": {
+    "age_45_plus": 3
+   },
+   "sources": [
+    "https://www.nhs.uk/conditions/early-menopause/"
+   ]
+  },
+  {
+   "id": "ovarian_cyst",
+   "name": "Ovarian cyst",
+   "summary": "A fluid-filled sac on an ovary; most cause no symptoms, but large or ruptured cysts can cause pain.",
+   "profile": {
+    "pain_outside_period": 3,
+    "bloating_or_pelvic_pressure": 3,
+    "pain_during_sex": 1,
+    "frequent_urination": 1,
+    "constipation": 1,
+    "irregular_cycles": 1,
+    "sudden_severe_pain": 2
+   },
+   "key": [
+    "pain_outside_period",
+    "bloating_or_pelvic_pressure"
+   ],
+   "against": {},
+   "sources": [
+    "https://www.nhs.uk/conditions/ovarian-cyst/"
+   ]
+  },
+  {
+   "id": "pid",
+   "name": "Pelvic inflammatory disease (PID)",
+   "summary": "An infection of the womb, fallopian tubes or ovaries, often from an untreated STI; it needs antibiotics.",
+   "profile": {
+    "pain_outside_period": 3,
+    "pain_during_sex": 2,
+    "bleeding_between": 2,
+    "bleeding_after_sex": 2,
+    "unusual_discharge": 2,
+    "fever": 2,
+    "painful_bowel_or_urination": 1
+   },
+   "key": [
+    "pain_outside_period",
+    "unusual_discharge",
+    "fever"
+   ],
+   "against": {},
+   "sources": [
+    "https://www.nhs.uk/conditions/pelvic-inflammatory-disease/"
+   ]
+  },
+  {
+   "id": "bacterial_vaginosis",
+   "name": "Bacterial vaginosis (BV)",
+   "summary": "A common imbalance of vaginal bacteria that changes discharge; it is not an STI.",
+   "profile": {
+    "unusual_discharge": 2,
+    "fishy_smell": 3
+   },
+   "key": [
+    "fishy_smell"
+   ],
+   "against": {
+    "itching_soreness": 1,
+    "thick_white_discharge": 1
+   },
+   "sources": [
+    "https://www.nhs.uk/conditions/bacterial-vaginosis/",
+    "https://www.nhs.uk/conditions/vaginal-discharge/"
+   ]
+  },
+  {
+   "id": "thrush",
+   "name": "Vaginal thrush",
+   "summary": "A common yeast infection that causes itching and thick white discharge.",
+   "profile": {
+    "itching_soreness": 3,
+    "thick_white_discharge": 3,
+    "unusual_discharge": 1,
+    "pain_during_sex": 1,
+    "painful_bowel_or_urination": 1
+   },
+   "key": [
+    "itching_soreness",
+    "thick_white_discharge"
+   ],
+   "against": {
+    "fishy_smell": 1
+   },
+   "sources": [
+    "https://www.nhs.uk/conditions/thrush-in-men-and-women/",
+    "https://www.nhs.uk/conditions/vaginal-discharge/"
+   ]
+  },
+  {
+   "id": "toxic_shock_syndrome",
+   "name": "Toxic shock syndrome (TSS)",
+   "summary": "A rare but life-threatening reaction to bacterial toxins, linked to tampon and cup use. It is an emergency.",
+   "profile": {
+    "fever": 3,
+    "rash_sunburn": 3,
+    "tampon_or_cup_use": 3,
+    "vomiting_diarrhoea": 2,
+    "fainting": 2
+   },
+   "key": [
+    "fever",
+    "rash_sunburn"
+   ],
+   "against": {},
+   "urgent": true,
+   "sources": [
+    "https://www.nhs.uk/conditions/toxic-shock-syndrome/"
+   ]
+  }
+ ],
+ "red_flags": [
+  {
+   "if_all": [
+    "sudden_severe_pain"
+   ],
+   "message": "Sudden, severe pain in your pelvis or tummy needs urgent medical care. Call your local emergency number or go to an emergency department now, especially if you could be pregnant, feel faint or have a fever."
+  },
+  {
+   "if_all": [
+    "fainting",
+    "heavy_bleeding"
+   ],
+   "message": "Feeling faint or fainting with heavy bleeding needs urgent medical help. Contact emergency services or go to an emergency department."
+  },
+  {
+   "if_all": [
+    "fever",
+    "rash_sunburn"
+   ],
+   "message": "A high temperature with a sunburn-like rash can be toxic shock syndrome. Remove any tampon or cup and get emergency help straight away."
+  },
+  {
+   "if_all": [
+    "possible_pregnancy",
+    "pain_outside_period"
+   ],
+   "message": "If you could be pregnant and have pelvic pain, get seen urgently to rule out an ectopic pregnancy."
+  },
+  {
+   "if_all": [
+    "fever",
+    "pain_outside_period"
+   ],
+   "message": "Pelvic pain with a fever can be an infection such as PID. Try to see a doctor today."
+  }
+ ]
+}
