@@ -1,0 +1,55 @@
+# Trusted pages for Luna's knowledge base. One URL per line; lines starting with # are ignored.
+# Run `python ingest.py` after editing, then restart the app.
+
+# --- NHS (UK) ---
+https://www.nhs.uk/conditions/periods/
+https://www.nhs.uk/conditions/periods/starting-periods/
+https://www.nhs.uk/conditions/periods/period-problems/
+https://www.nhs.uk/conditions/periods/fertility-in-the-menstrual-cycle/
+https://www.nhs.uk/conditions/heavy-periods/
+https://www.nhs.uk/conditions/period-pain/
+https://www.nhs.uk/conditions/irregular-periods/
+https://www.nhs.uk/conditions/stopped-or-missed-periods/
+https://www.nhs.uk/conditions/pre-menstrual-syndrome/
+https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/
+https://www.nhs.uk/conditions/endometriosis/
+https://www.nhs.uk/conditions/adenomyosis/
+https://www.nhs.uk/conditions/fibroids/
+https://www.nhs.uk/conditions/ovarian-cyst/
+https://www.nhs.uk/conditions/toxic-shock-syndrome/
+https://www.nhs.uk/conditions/iron-deficiency-anaemia/
+https://www.nhs.uk/conditions/vaginal-discharge/
+https://www.nhs.uk/conditions/thrush-in-men-and-women/
+https://www.nhs.uk/conditions/bacterial-vaginosis/
+https://www.nhs.uk/conditions/pelvic-inflammatory-disease/
+https://www.nhs.uk/conditions/menopause/
+https://www.nhs.uk/conditions/early-menopause/
+https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/
+
+# --- MedlinePlus (US National Library of Medicine) ---
+https://medlineplus.gov/menstruation.html
+https://medlineplus.gov/periodpain.html
+https://medlineplus.gov/premenstrualsyndrome.html
+https://medlineplus.gov/polycysticovarysyndrome.html
+https://medlineplus.gov/endometriosis.html
+https://medlineplus.gov/uterinefibroids.html
+https://medlineplus.gov/menopause.html
+
+# --- U.S. Office on Women's Health ---
+https://www.womenshealth.gov/menstrual-cycle/your-menstrual-cycle
+https://www.womenshealth.gov/menstrual-cycle/period-problems
+https://www.womenshealth.gov/menstrual-cycle/premenstrual-syndrome
+https://www.womenshealth.gov/menstrual-cycle/your-menstrual-cycle-and-your-health
+https://www.womenshealth.gov/a-z-topics/polycystic-ovary-syndrome
+https://www.womenshealth.gov/a-z-topics/endometriosis
+https://www.womenshealth.gov/a-z-topics/uterine-fibroids
+
+# --- ACOG patient FAQs (may block automated downloads) ---
+https://www.acog.org/womens-health/faqs/your-first-period
+https://www.acog.org/womens-health/faqs/dysmenorrhea-painful-periods
+https://www.acog.org/womens-health/faqs/heavy-menstrual-bleeding
+https://www.acog.org/womens-health/faqs/abnormal-uterine-bleeding
+https://www.acog.org/womens-health/faqs/premenstrual-syndrome
+
+# --- Teens (Nemours KidsHealth) ---
+https://kidshealth.org/en/teens/menstruation.html
